@@ -103,7 +103,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #5f4d93 15%, #CDE4BA 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1851,6 +1851,7 @@ input, select, textarea {
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		background-color: #A2B9A6;
 	}
 
 		input[type="submit"].icon,
@@ -2253,6 +2254,7 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+
 		}
 
 		.icon.major {
@@ -2516,10 +2518,12 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
+			list-style: none;
 		}
 
 			ul.actions.special li:first-child {
 				padding-left: 0;
+				list-style: none;
 			}
 
 		ul.actions.stacked {
@@ -2814,13 +2818,13 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: calc(25% - 2em);
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
 		}
 
-			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
+			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3), .features li:nth-child(4) {
 				margin-top: 0;
 			}
 
@@ -2866,11 +2870,13 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		flex-direction: column;
 		width: 100%;
 		margin: 0 0 3em 0;
 		padding: 0;
 		list-style: none;
 		cursor: default;
+		gap: 0.5em;
 	}
 
 		.statistics li {
@@ -2880,7 +2886,14 @@ input, select, textarea {
 			flex: 1;
 			padding: 1.5em;
 			color: #ffffff;
-			text-align: center;
+			text-align: left;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			text-align: left;
+			gap: 1em;
+			border-radius: 8px;
 		}
 
 			.statistics li.style1 {
@@ -2939,7 +2952,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			.statistics {
 				display: block;
@@ -2966,7 +2979,7 @@ input, select, textarea {
 					font-size: 2.5em;
 				}
 
-		}
+		} */
 
 /* Spotlight */
 
@@ -2995,6 +3008,10 @@ input, select, textarea {
 
 			.spotlight .content header.major {
 				margin: 0 0 2em 0;
+			}
+
+			.spotlight .content p {
+				text-align: left;
 			}
 
 		.spotlight .image {
@@ -3215,13 +3232,13 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
+		background-color: rgb(247, 247, 247);
 		color: #636363;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: rgb(247, 247, 247);
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3583,7 +3600,33 @@ input, select, textarea {
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
+			text-align: center;
+			position: relative;
 		}
+
+			#main > .main video {
+				max-width: 100%;
+				height: auto;
+			}
+
+			#main > .main .back-link {
+				position: absolute;
+				top: 1em;
+				left: 1em;
+				color: black;
+				text-decoration: none;
+				border: none;
+				outline: none;
+				font-weight: 300;
+			}
+
+			#main > .main .back-link i {
+				margin-right: 0.5em;
+			}
+
+			#main > .main .back-link:hover {
+				color: #007bff;
+			}
 
 			#main > .main:first-child {
 				border-top: 0;
@@ -3783,3 +3826,10 @@ input, select, textarea {
 			}
 
 		}
+
+.circle-image {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+}
