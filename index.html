@@ -65,7 +65,10 @@
 									<h2>Features</h2>
 									<p>Designed with simplicity at its core, Nudge separates planning and action into two calm, focused interfaces. Each part of the system removes unnecessary complexity so you can stay present with what matters.</p>
 								</header>
-								<h3>Docking Station</h3>
+								<span class="image fit">
+											<img src="images/Nudge-DockingStation2.JPG" class="image">
+								</span>
+								<h3>Docking station</h3>
 								<ul class="statistics">
 									<li class="style1">
 										<span class="icon solid fa-sun"></span>
@@ -84,6 +87,9 @@
 										<strong>Track progress</strong> Visually see what you’ve completed throughout the day.
 									</li>
 								</ul>
+								<span class="image fit">
+											<img src="images/Nudge-device.JPG" class="image">
+								</span>
 								<h3>Nudge keychain</h3>
 								<ul class="statistics">
 									<li class="style5">
@@ -126,25 +132,25 @@
 									<li>
 										<img src="images/Vani-headshot.png" class="circle-image">
 										<h3>Vani</h3>
-										<p>Backend head</p>
+										<p>Backend and Hardware</p>
 										<!-- <a href="generic.html" class="button">Process blog</a> -->
 									</li>
 									<li>
 										<img src="images/Kaj-headshot.png" class="circle-image">
 										<h3>Kaj</h3>
-										<p>Full stack</p>
+										<p>Fabrication and Enclosure Design</p>
 										<!-- <a href="generic.html" class="button">Process blog</a> -->
 									</li>
 									<li>
 										<img src="images/Elizabeth-headshot.png" class="circle-image">
 										<h3>Elizabeth</h3>
-										<p>Full stack</p>
+										<p>Frontend and UI Design</p>
 										<!-- <a href="generic.html" class="button">Process blog</a> -->
 									</li>
 									<li>
 										<img src="images/Rhys-headshot.png" class="circle-image">
 										<h3>Rhys</h3>
-										<p>Frontend head</p>
+										<p>UI/UX Design and Testing</p>
 										<!-- <a href="generic.html" class="button">Process blog</a> -->
 									</li>
 								</ul>
@@ -156,43 +162,63 @@
 							<section id="process" class="main special">
 								<header class="major">
 									<h2>Process</h2>
-									<section >
-									<p style="text-align: left;">
-											Our team formed around a shared interest in creating a physical gadget that supports people in a positive way. We were all interested in our generation’s addiction to phones and endless scrolling. We had many conversations about how difficult these challenges can be, especially for people with ADHD, where completing basic tasks can feel overwhelming.</p>
+						
+									<p style="text-align: left;">Our team formed around a shared interest in creating a physical gadget that supports people in a positive way. We were especially interested in our generation’s addiction to phones and endless scrolling. Through many conversations, we explored how difficult these challenges can be, particularly for people with ADHD, where even completing basic tasks can feel overwhelming.</p>
+									<section  style="column-count: 2;">
+										<p style="text-align: left;"> We wanted to build something people would actually use. Early on, we realized that addressing this problem meant avoiding apps or devices that already contribute to distraction. </p>
 										<span class="image fit">
 											<img src="images/Inital-ideas.png" class="image">
 										</span>
-									<section style="column-count: 2;">
-									<p style="text-align: left;">We wanted to build something people would actually use. We realized that to address this problem, we could not rely on apps or existing devices that already contribute to distraction. We initially explored making a smart watch that tracked vitals and tasks to help people.</p>
-
-									<p style="text-align: left;"> After expert feedback, we focused on the most important part of our concept: task completion. We reduced the idea down to a few core features.</p>
-									<span class="image fit">
-											<img src="images/Vani-notebook-drawing2.png" class="image">
-										</span>
-																		</section>
-									
-
-									<p style="text-align: left;">We developed the watch using an ESP32 and 3D-printed casings. The UI was built in Squareline and the interactions were coded and tested.</p>
-									<span class="image fit">
-											<img src="images/Inside-of-case.png" class="image">
-										</span>
-
-									<p style="text-align: left;">We conducted user testing and iterated on the look and feel of the watch. We also added physical buttons to emphasize tactile interaction and reduce reliance on touchscreens.</p>
-
-									<p style="text-align: left;">As the device became too large to function comfortably as a watch, we returned to the drawing board.<br><br></p>
-
-									<p style="text-align: left;">We decided a retro-inspired device, similar to a Tamagotchi, better fit our goal and audience, and was more practical for daily use.</p>
-									<span class="image fit">
-											<img src="images/Nudge-UI.png" class="image">
-										</span>
-
-									<p style="text-align: left;">We then developed the docking station with this retro design direction in mind, aiming to create something that feels natural to keep on a desk.</p>
-									<span class="image fit">
-											<img src="images/nudge-keychain-on-dock.png" class="image">
-										</span>
-
-									<p style="text-align: left;">We continued testing, integrating feedback, and refining the system. Our final step was customizing the device and polishing the interaction design.</p>
 									</section>
+
+									<p style="text-align: left;"> We initially explored creating a smartwatch that could track health vitals and tasks, but after presenting our idea to experts and gathering feedback, we narrowed the scope of our project.</p>
+									<p style="text-align: left;">We shifted our focus toward building better habits and supporting task completion. This led us to define a few core features, including a breathing exercise, a Pomodoro timer, and task reminders. </p>
+									<p style="text-align: left;">We began development by selecting hardware and creating Figma designs for the UI. Work was divided based on each team member’s strengths, allowing us to develop the hardware, interface, functionality, and casing at the same time. We chose to use an ESP32-S3 Touch LCD for the display and 3D printed the initial casing. </p>
+
+									<span class="image fit">
+										<img src="images/Vani-notebook-drawing2.png" class="image">
+									</span>
+									<section  style="column-count: 2;">	
+										<p style="text-align: left;">Our first iteration included a basic UI, working functionality with physical buttons, and an initial casing design. From there, we conducted user testing and iterated on both the look and feel of the device. Based on this feedback, we made significant updates to the UI.</p>
+									
+										<span class="image fit">
+											<img src="images/Iteration1.gif" class="image">
+										</span>									
+									</section>
+
+									<span class="image fit">
+											<img src="images/User-Testing.gif" style="max-width: 300px; display: block; margin: 20px auto;">
+									</span>
+									
+									<section  style="column-count: 2;">	
+							
+										<span class="image fit">
+											<img src="images/Inside-of-case.png" class="image">
+										</span>		
+										<p style="text-align: left;">As we refined the enclosure, we realized the device had become too large to function comfortably as a watch. This prompted a major shift in direction.</p>						
+									</section>
+
+									<p style="text-align: left;">We transitioned to designing a smaller gadget that could clip onto a keychain or backpack. Inspired by retro devices like a Tamagotchi, this new form felt more practical for daily use and resonated strongly with our target audience.</p>
+																	
+									<span class="image fit">
+										<img src="images/Nudge-UI2.png" class="image">
+									</span>
+
+									<p style="text-align: left;">As we added finishing touches, we also developed a docking station. We maintained the retro design language and aimed to create something that feels natural to keep on a desk while remaining visually appealing.</p>
+
+									<p style="text-align: left;">Once both components were built, we focused on integrating them into a seamless system. We continued user testing, incorporated feedback, and refined the overall experience. Our final step was customizing the device and polishing the interaction design.</p>
+
+									<span class="image fit">
+										<img src="images/nudge-keychain-on-dock.png" class="image">
+									</span>
+
+									<p style="text-align: left;">This process led to our final Nudge ecosystem. The docking station is designed to live on a desk or counter, serving as both a functional and aesthetic anchor. From there, users can set daily goals and sync them to the device. The portable gadget can be attached to everyday items, allowing users to track and complete tasks throughout the day.</p>
+
+									<span class="image fit">
+										<img src="images/Ecosystem-closeup.JPG" class="image">
+									</span>
+									<p style="text-align: left;">Ultimately, we aimed to create something people would genuinely enjoy carrying, something that brings a small sense of satisfaction and joy to everyday productivity.</p>
+
 								<footer class="major">
 								</footer>
 							</section>
